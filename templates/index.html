@@ -1,0 +1,47 @@
+{% extends "layout.html"  %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{url_for('static',filename='img/home.jpg ')}} ')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>{{params["blog_name"]}}</h1>
+            <span class="subheading">{{params["blog_name"]}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-8 col-md-10 mx-auto">
+      <p>Click on the below items to visit the post and see the receipe</p>
+        {% for item in post %}
+        <a href="/post/{{item[5]}}"><h5>{{item[1]}}</h5>
+        <p>{{item[3]}}</p></a>
+        <hr>
+
+    {% endfor %}
+
+        <hr>
+       
+        
+        <!-- Pager -->
+        <div class="clearfix">
+        <a class="btn btn-primary float-lef" href="{{prev}}">&larr;Previous Posts </a>
+          <a class="btn btn-primary float-right" href="{{next}}">Next Posts &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}
+
+  
+  

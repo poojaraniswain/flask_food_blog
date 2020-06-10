@@ -1,0 +1,24 @@
+{
+	"params":
+	{
+	"host":"localhost",
+	"user":"root",
+  	"passwd":"Pooja@123",
+  	"database":"foodblog",
+  	"facebook":"www.facebook.com",
+  	"blog_name":"FoodBlog",
+    "subtitle":"Huger Satisfaction",
+  	"no_of_post":2,
+  	"login_image":"login.png",
+  	"admin_user":"Pooja",
+  	"admin_pass":"Pooja",
+    "post1":"eggmaggie.jfif",
+    "post2":"biryani.jfif",
+    "post3":"mangojuice.jfif",
+    "post4":"cornsalad.jfif",
+    "post5":"coffee.jpg"
+
+
+	}
+
+}
